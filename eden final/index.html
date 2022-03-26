@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mines.css" />
+    <title>MINES</title>
+  </head>
+  <body onload="init()">
+    <button class="smile" onclick="init()">MINE SWEEPER 😃</button>
+    <!-- <div class="mines">MINES LEFT: <span data-mine-count>10</span></div> -->
+    <div class="table"></div>
+    <div class="lives">
+      <h1></h1>
+    </div>
+    <div class="modal hidden">
+      <button class="btn" onclick="init()">🤯</button>
+      <h2>lets play again!</h2>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="levels">
+      <button class="button-15" onclick="init()">EAZY</button>
+      <button class="button-15" onclick="init(5,3)">MEDIUM</button>
+      <button class="button-15" onclick="init(6,4)">HARD</button>
+    </div>
+    <div class="name">Eden Ruderman</div>
+    <button class="button-62" onclick="play()">MORE FUN WITH MUSIC</button>
+    <div class="best-score"></div>
+    <div id="count_up_timer">00:00:00</div>
+    <script src="mines.js"></script>
+    <script src="utils.js"></script>
+  </body>
+</html>
